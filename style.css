@@ -1,54 +1,60 @@
-* {
-  padding: 0px;
-  margin: 0px;
+*{
+    padding:0px;
+    margin: 0px;
+}
+body{
+    background-color: #000;
+}
+header{
+    background-color: #805;
+    text-align: center;
+    padding: 20px;
 }
 
-body {
-  background-image: url(fondo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+#b1{
+    background-color: #805;
+    border:#805 ;
+    float:left;
+    margin-top: -11px;
+
+}
+#imagen1{
+ width: 40px;
+ border-radius: 10px;
+ border: 1px solid #000;
+ margin: 2px;
+ }
+
+#inicio{
+    border-radius: 10px;
+    background-color: #805;
+    border: 0px solid #fff;
+    color: #fff;
+    font-size: large;
 }
 
-.destacado {
-  background-color: #850c85;
-  color: #fff;
-  font-size: x-large;
-  margin: 5px;
+#nosotros{
+    border-radius: 10px;
+    background-color: #805;
+    border: 0px solid #fff;
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: large;
 }
 
-.texto-justificado {
-  color: #fff;
-  font-size: x-large;
-  margin: 5px;
-  text-align: justify;
+#perfil{
+    border-radius: 10px;
+    background-color: #805;
+    border: 0px solid #fff;
+    color: #fff;
+    font-size: large;
 }
 
-.texto-centrado {
-  text-align: center;
+footer{
+    background-color: #805;
+    color: #fff;
+    text-align: center;
+    margin-top:100vh; ;
+    padding: 5px;
 }
-
-h1 {
-  color: #fff;
-  border: 5px solid #fff;
-  border-radius: 120%;
-  margin: 20px;
-  font-size: xx-large;
-}
-
-h2 {
-  color: #fff;
-  font-size: 25px;
-  margin-top: 35px;
-  margin-bottom: 35px;
-  text-decoration: underline;
-}
-
-h3 {
-  border: 3px solid;
-  padding: 3px;
-  margin-left: 560px;
-  margin-right: 560px;
-  color: #fff;
-  border-radius: 50px;
-  text-align: center;
-}/*# sourceMappingURL=style.css.map */
