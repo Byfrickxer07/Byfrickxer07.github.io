@@ -57,12 +57,32 @@ h1{
     text-align: center;
     margin-top:20px ;
 }
-
+.campeon{
+    border: #fff  2px solid;
+    border-radius: 10px;
+    padding-bottom: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    
+}
 .city{
     width: 800px;
     float: left;
     margin-top: 20px;
     margin-left: 20px;
+    border-radius: 10px ;
+}
+
+.info_city{
+    float: right;
+    color: #fff;
+    text-align: justify;
+    margin-right: 200px;
+    margin-top: 200px;
+    border: #fff  2px solid;
+    border-radius: 10px;
+    padding: 20px;
 }
    
 
