@@ -51,6 +51,13 @@ header{
     font-size: large;
 }
 
+h1{
+    color: #fff;
+    font-size:xx-large;
+    text-align: center;
+    margin-top:20px ;
+}
+
 footer{
     background-color: #805;
     color: #fff;
