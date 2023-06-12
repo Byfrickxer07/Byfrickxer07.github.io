@@ -79,8 +79,8 @@ h1{
     float: right;
     color: #fff;
     text-align: justify;
-    margin-right: 200px;
-    margin-top: 200px;
+    margin-right: 150px;
+    margin-top: 150px;
     border: #fff  2px solid;
     border-radius: 10px;
     padding: 20px;
@@ -91,6 +91,6 @@ footer{
     background-color: #805;
     color: #fff;
     text-align: center;
-    margin-top:40vh; ;
+    margin-top:38vh; ;
     padding: 5px;
 }
