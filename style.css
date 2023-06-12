@@ -58,6 +58,14 @@ h1{
     margin-top:20px ;
 }
 
+.city{
+    width: 800px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+   
+
 footer{
     background-color: #805;
     color: #fff;
