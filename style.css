@@ -90,12 +90,21 @@ h1 {
     margin-top: 1%;
 }
 
+.tabla{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+
 
 footer {
     background-color: #805;
     color: #fff;
     text-align: center;
-    margin-top: 38vh;
+    margin-top: 18%;
     ;
     padding: 1%;
 }
