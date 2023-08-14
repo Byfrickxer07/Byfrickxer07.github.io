@@ -1,110 +1,39 @@
-* {
-    padding: 0px;
-    margin: 0px;
+img{
+    width: 100%;
 }
 
-body {
-    background-color: #000;
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(184, 183, 183);
 }
 
-header {
-    background-color: #805;
+.header{
     text-align: center;
-    padding: 20px;
+    padding: 22px;
+    background-color: rgb(172, 147, 115);
 }
 
-#b1 {
-    background-color: #805;
-    border: #805;
+.column{
     float: left;
-    margin-top: -11px;
-
+    width: 50%;
+    padding: 12px;
 }
 
-#imagen1 {
-    width: 40px;
-    border-radius: 10px;
-    border: 1px solid #000;
-    margin: 2px;
+.column img {
+    margin-top: 12px;
+    vertical-align: middle;
 }
 
-#inicio {
-    border-radius: 10px;
-    background-color: #805;
-    border: 0px solid #fff;
-    color: #fff;
-    font-size: large;
-}
-
-#nosotros {
-    border-radius: 10px;
-    background-color: #805;
-    border: 0px solid #fff;
-    color: #fff;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: large;
-}
-
-h1 {
-    color: #fff;
-    font-size: xx-large;
+h1{
     text-align: center;
-    margin-top: 20px;
-    text-decoration: underline;
 }
 
-.campeon {
-    border: #fff 2px solid;
-    border-radius: 10px;
-    padding-bottom: 23%;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-top: 1%;
-
-}
-
-.city {
-    width: 800px;
-    margin-top: 1%;
-    margin-left: 28.5%;
-    border-radius: 1%;
-}
-
-.info_city {
-    float: right;
-    color: #fff;
-    text-align: justify;
-    margin-right: 24%;
-    margin-top: 2%;
-    border: #fff 2px solid;
-    border-radius: 10px;
-    padding: 5%;
-}
-
-.video {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1%;
-}
-
-.tabla{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2%;
-}
-
-
-
-footer {
-    background-color: #805;
-    color: #fff;
-    text-align: center;
-    margin-top: 18%;
-    ;
-    padding: 1%;
+.oferta{
+    width: 40%;
+    height: 40%;
+    margin-left: 30% ;
 }
