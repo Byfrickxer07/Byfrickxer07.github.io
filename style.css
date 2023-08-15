@@ -8,24 +8,26 @@ img{
 body{
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(184, 183, 183);
+    background-color: rgb(255, 221, 109);
 }
 
 .header{
     text-align: center;
     padding: 22px;
-    background-color: rgb(172, 147, 115);
+    background-color: rgb(252, 190, 121);
 }
 
 .column{
     float: left;
     width: 50%;
     padding: 12px;
+    border-radius: 3%;
 }
 
 .column img {
     margin-top: 12px;
     vertical-align: middle;
+    border-radius: 3%;
 }
 
 h1{
@@ -36,4 +38,11 @@ h1{
     width: 40%;
     height: 40%;
     margin-left: 30% ;
+}
+
+.foto1, .foto2, .foto3, .foto4 {
+    width: 50%;
+    margin-top: 2%;
+    margin-left: 25%;
+    border-radius: 7%;
 }
