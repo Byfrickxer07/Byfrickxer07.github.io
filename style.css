@@ -50,10 +50,10 @@ h1{
 }
 
 .BotonInicio{
-    float: left;
+    
     background-color:  rgb(252, 190, 121);
     border: 0px solid rgb(252, 190, 121);
-    margin-left:45% ;
+    margin-left:51% ;
     margin-top: 1.1%;
     font-size: x-large;
 }
