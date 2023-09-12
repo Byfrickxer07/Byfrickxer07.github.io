@@ -19,7 +19,7 @@ exit('Failed to connect to MySQL: ' . mysqli_connect_error());}
 
 <?php
 		if (!empty($_GET['aviones'])) {
-			$queryavionEspecifico = "SELECT * FROM aviones WHERE id = ". $_GET['aviones'];
+			$queryavionEspecifico = "SELECT * FROM aviones WHERE nombre = ". $_GET['aviones'];
 			$resultavionEspecifico = mysqli_query($conexionDatos, $queryavionEspecifico);
 			$avionEspecifico = mysqli_fetch_array($resultavionEspecifico);
 			echo "<title></title>";
