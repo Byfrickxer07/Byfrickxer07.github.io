@@ -11,7 +11,7 @@
 
     <?php  
 
-$conexionDatos = mysqli_connect('localhost', 'phpmyadmin', 'RedesInformaticas', 'db_fricker');
+$mysqli = mysqli_connect('localhost', 'phpmyadmin', 'RedesInformaticas', 'db_fricker');
 if (mysqli_connect_errno()) {
 exit('Failed to connect to MySQL: ' . mysqli_connect_error());}
 
@@ -20,7 +20,7 @@ exit('Failed to connect to MySQL: ' . mysqli_connect_error());}
 <?php
 		if (!empty($_GET['aviones'])) {
 			$queryavionEspecifico = "SELECT * FROM aviones WHERE nombre = ". $_GET['aviones'];
-			$resultavionEspecifico = mysqli_query($conexionDatos, $queryavionEspecifico);
+			$resultavionEspecifico = mysqli_query($mysqli, $queryavionEspecifico);
 			$avionEspecifico = mysqli_fetch_array($resultavionEspecifico);
 			echo "<title></title>";
 		} else {
