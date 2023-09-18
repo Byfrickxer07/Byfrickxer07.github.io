@@ -12,7 +12,7 @@
     <?php  
 
 $mysqli = mysqli_connect('localhost', 'phpmyadmin', 'RedesInformaticas', 'db_fricker');
-if (mysqli_connect_errno()) {
+if ($conexionDatos()) {
 exit('Failed to connect to MySQL: ' . mysqli_connect_error());}
 
 ?>
