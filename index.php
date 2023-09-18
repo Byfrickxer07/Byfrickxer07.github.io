@@ -8,6 +8,7 @@
     <div class="header2">
         <h1>Galeria de Aviones de combate</h1>
     </div>
+	<img src="" alt="">
 
     <?php  
 
@@ -16,17 +17,6 @@ if (mysqli_connect_errno()) {
 exit('Failed to connect to MySQL: ' . mysqli_connect_error());}
 
 ?>
-
-<?php
-		if (!empty($_GET['aviones'])) {
-			$queryavionEspecifico = "SELECT * FROM aviones WHERE nombre = ". $_GET['aviones'];
-			$resultavionEspecifico = mysqli_query($mysqli, $queryavionEspecifico);
-			$avionEspecifico = mysqli_fetch_array($resultavionEspecifico);
-			echo "<title></title>";
-		} else {
-			echo "<title></title>";
-		}
-	?>
 
 </head>
 <body>
@@ -40,15 +30,19 @@ exit('Failed to connect to MySQL: ' . mysqli_connect_error());}
   <input type="submit">
   </form>
   <?php
-	if (!empty($_GET['avionones'])) {
+  $test=$_GET['aviones'];
+	if (!empty($test)){
+
+		$queryavionEspecifico = "SELECT * FROM aviones HAVING nombre =" . $test;
+		$resultavionEspecifico = mysqli_query($mysqli, $queryavionEspecifico);
+		$avionEspecifico = mysqli_fetch_array($resultavionEspecifico);
+		
 		echo "<h3>viendo:$avionEspecifico[1]</h3>";
-		$queryfotoavion = "SELECT * FROM aviones WHERE id_foto =  ".$_GET['aviones'];
-		echo "<img>$fotoavion[1]</img>";
-		echo "<a href=\"index.php\">Volver</a>";
+		echo "<img src=$avionEspecifico[2]>";
 		} else {
 			echo "<br>";
 		}
-		mysqli_close($conexionDatos);
+		mysqli_close($mysqli);
 	?>
 
 </body>
