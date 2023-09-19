@@ -25,15 +25,16 @@ exit('Failed to connect to MySQL: ' . mysqli_connect_error());}
   <select name="aviones">
     <option value="F15">F15</option>
     <option value="F16">F16</option>
-    <option value="lookhead">lookhead</option>
      </select>
   <input type="submit">
   </form>
-  <?php
+  
+  
+ <?php
   $test=$_GET['aviones'];
 	if (!empty($test)){
 
-		$queryavionEspecifico = "SELECT * FROM aviones HAVING nombre =" . $test;
+		$queryavionEspecifico = "SELECT * FROM aviones WHERE nombre =\"" . $test. "\"";
 		$resultavionEspecifico = mysqli_query($mysqli, $queryavionEspecifico);
 		$avionEspecifico = mysqli_fetch_array($resultavionEspecifico);
 		
